@@ -1,0 +1,66 @@
+<html>
+<head>
+   <title>
+      Html Crud with Pure JavaScript
+   </title>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<center><h2>Employee Management</h2><hr/></center>
+<center>
+  <table>
+    <tr>
+	  <td class="main-box">
+	  <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+	    <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Enter Your Name!!">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">EMP Code</label>
+          <input type="text" class="form-control" name="empCode" id="empCode" placeholder="Enter Emp Code!!">
+       </div>
+	   <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Salary</label>
+          <input type="text" class="form-control" name="Salary" id="Salary" placeholder="Salary">
+       </div>
+	   <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">City</label>
+          <input type="text" class="form-control" name="city" id="city" placeholder="@City!!">
+       </div><br/>
+	   <center>
+       <input class="btn btn-primary" type="submit" value="Submit">
+       </center>
+      </form>	   
+	  </td>
+	  
+	  <td class="main-box">
+	    <table class="table" id="employeeList">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Full Name</th>
+              <th scope="col">EMP Code</th>
+              <th scope="col">Salary</th>
+              <th scope="col">City</th>
+              <th scope="col">Update</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+	  </td>
+    </tr> 
+  </table>
+</center>
+<script src="script.js"></script>
+</body>
+</html>
